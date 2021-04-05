@@ -104,7 +104,7 @@ export default function App() {
             <li>
               <div className="joke">
                 P.S. – Do not ask me how I am different as I do not know that
-                yet. I just know.<span id="joke1" style={{fontSize:35}}>{setEmo}</span>
+                yet.<span id="joke1" style={{fontSize:35}}>{setEmo}</span>
               </div>
             </li>
           </ul>
