@@ -1,15 +1,19 @@
+import { useState } from "react";
 import "./styles.css";
 var colorOne = "#E5E7EB";
 var colorTwo = "#9CA3AF";
 
 var setEmo = "😅";
+var setTalk = "P.S. – Do not ask me how I am different as I do not know that yet.";
 export default function App() {
-  function showText(e) {
-    return setEmo;
+  const [text1, setText] = useState(setTalk);
+  function textChange(event) {
+if(text1=== setTalk){
+        setText(setEmo);
   }
-  function hideText(e) {
-    return setText;
-  }
+  else if(text1=== setEmo){
+setText(setTalk);
+  }  }
   return (
     <div className="App">
       <h1 style={{ textDecorationLine: "underline", color: "red" }}>
@@ -102,9 +106,12 @@ export default function App() {
               am sure you wont find anyone who work and thinks like me.
             </li>
             <li>
-              <div className="joke">
-                P.S. – Do not ask me how I am different as I do not know that
-                yet.<span id="joke1" style={{fontSize:35}}>{setEmo}</span>
+              <div
+                className="joke"
+                onMouseOver={textChange}
+                onMouseOut={textChange}
+              >
+                {text1}
               </div>
             </li>
           </ul>
