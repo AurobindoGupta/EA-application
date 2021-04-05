@@ -1,0 +1,25 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.stuff {
+  padding: 5%;
+  text-align: left;
+}
+.hover1 :hover {
+  background-color: #9ca3af;
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+.hover2 :hover {
+  background-color: #111827;
+  color: aliceblue;
+  transform: scale(1.1);
+  transition: all ease 500ms;
+}
+
+.joke:hover {
+  background: #9ca3af;
+  
+}
+
