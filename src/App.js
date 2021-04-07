@@ -3,25 +3,28 @@ import "./styles.css";
 var colorOne = "#E5E7EB";
 var colorTwo = "#9CA3AF";
 
-var setEmo = "😅";
-var setTalk = "P.S. – Do not ask me how I am different as I do not know that yet.";
+var setEmo = "😅Joking...";
+var setTalk =
+  "P.S. – Do not ask me how I am different as I do not know that yet.";
 export default function App() {
   const [text1, setText] = useState(setTalk);
   function textChange(event) {
-if(text1=== setTalk){
-        setText(setEmo);
+    if (text1 === setTalk) {
+      setText(setEmo);
+    } else if (text1 === setEmo) {
+      setText(setTalk);
+    }
   }
-  else if(text1=== setEmo){
-setText(setTalk);
-  }  }
   return (
     <div className="App">
-      <h1 style={{ textDecorationLine: "underline", color: "red" }}>
+      <h1 style={{ textDecorationLine: "underline", color: "#4F46E5" }}>
         I CAN BE A GREAT ADDITION TO YOUR TEAM
       </h1>
       <div className="stuff">
         <ol>
           <li className="hover1">
+            <h3>Aurobindo Gupta</h3>
+            <h6>aurogpt10@gmail.com, Mob-7388616382</h6>
             <h4>Btech(2018),Mtech(2020) from Amity University.</h4>
             <div>
               M.Tech Dissertation: Melanoma detection using Deep learning.
